@@ -1,3 +1,4 @@
+% Desarrollo de la funcionalidad
 Como solución a la funcionalidad de Servicio de consulta, se proponen los siguientes puntos:
 * Crear un servidor usando la librería http. Crear handlers para la lectura, escritura y envío de datos a través de las peticiones enviadas desde el frontend
 * La conexión a la base de datos se hace a través de la librería msql.
@@ -31,3 +32,8 @@ db_connector = mysql.connector.connect(
         database=DATABASE,
         port=PORT
     )
+
+% Ejecución del proyecto
+
+- Se debe iniciar el servidor ejecutando el archivo que se encuentra en la ruta habi_pj/app/main.py
+- Si se inicia de forma correcta se debe lanzar una petición POST en formato JSON, como se muestra en el archivo de ejemplo json_from_frontend.json
