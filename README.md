@@ -13,3 +13,21 @@ Como solución a la funcionalidad de Servicio de consulta, se proponen los sigui
 Los puntos mencionados anteriormente se búscan gestionar a través de procesos propios de SQL, tratando de evitar la mayor cantidad de verificaciones y correcciones hechas con Python. Esto buscando la mayor eficiencia en la ejecución de las peticiones hechas al backend.
 
 Se estandariza la respuesta del API con estructuras JSON, pensando en ofrecer facilidad al frontend en la visualización de los datos.
+
+Para la correcta lectura de las credenciales de acceso a la base de datos se debe crear un archivo .env en la raíz del proyecto, con el siguiente formato:
+
+HOST = "HOST"
+DB_USER = "DB_USER"
+PASSWORD = "PASSWORD"
+DATABASE = "DATABASE"
+PORT = "PORT"
+
+O también es posible escribirlo directamente en el conector que se encuentra en el archivo connection_db.py
+
+db_connector = mysql.connector.connect(
+        host=HOST,
+        user=USER,
+        password=PASSWORD,
+        database=DATABASE,
+        port=PORT
+    )
