@@ -36,4 +36,4 @@ db_connector = mysql.connector.connect(
 # Ejecución del proyecto
 
 - Se debe iniciar el servidor ejecutando el archivo que se encuentra en la ruta habi_pj/app/main.py
-- Si se inicia de forma correcta se debe lanzar una petición POST en formato JSON, como se muestra en el archivo de ejemplo json_from_frontend.json
+- Si se inicia de forma correcta se debe lanzar una petición POST al endpoint http://127.0.0.1:8080/search, con un body en formato JSON, como se muestra en el archivo de ejemplo json_from_frontend.json
